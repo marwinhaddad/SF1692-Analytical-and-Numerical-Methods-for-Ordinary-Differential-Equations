@@ -1,0 +1,28 @@
+
+#
+Analystisk lösning:
+
+dy/dx = y^2     ==>     1/y^2 dy = dx       ==>     -1/y = x + C        ==>
+
+==>     y(x) = -1/(x + C),
+
+y(0) = N/100        ==>     y(x) = 1/((100/N) - x).
+
+lim (x-->100/N) y(x) = inf == PANG!
+
+
+#
+Nummerisk lösning:
+
+kollar i plotten när y --> inf
+
+
+#
+Om y(0) < 0 får vi att C > 0 för alla k, y(0) = k < 0. Detta ger att C = 1/k        ==>
+
+==>     y(x) = -1/(1/k + x). Vi ser att y(x) är definierad och mindre än 0 för alla x > 0.
+
+
+#
+
+

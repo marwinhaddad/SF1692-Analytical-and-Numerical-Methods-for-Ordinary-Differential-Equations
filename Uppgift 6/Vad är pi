@@ -1,0 +1,39 @@
+#
+Analystisk lösning:
+
+y" + y' = 0     där     y = yh + yp     där     yp = 0
+
+karaktäristisk ekvation ger homogen lösning yh:
+
+    r^2 + 1 = 0     ==>     r = +-i     ==>
+
+    ==>     yh = e^ax * (A*cos(x) + B*sin(x))   där a = 0 som ges av r = a+-b*i
+            A och B fås av BV y(0) = 1, y'(o) = 0
+
+    y(0) = 1:
+                1 = A*cos(0) + B*sin(0) ==> A = 1
+
+    y'(0) = 0:
+                0 = -A*sin(0) + B*cos(0) ==> B = 0
+
+    ==> yh = cos(x)
+
+    svar: y(x) = cos(x)
+
+
+#
+Vi söker när y(t) = 0, då det gör när t = pi/2.
+
+Vi gör detta genom att lösa euler för andra ordningens ODE.
+Vi provar även med RK4.
+
+
+#
+
+
+
+
+
+
+
+

@@ -1,0 +1,27 @@
+Analytisk lösning:
+
+dy/dx = sqrt(abs(y))    ==>     1/sqrt(abs(y)) dy = dx,     integration ger... ==>
+
+==>     2*sqrt(abs(y)) = x + C      ==>     abs(y) = (x + C)^2 /4
+
+y(0) = 0        ==>     C = 0       ==>     abs(y(x)) = x^2 /4      ==>
+                ---
+               |    x^2 /4 , för 0 <= x     y1
+==>     y(x) = {
+               |    -x^2 /4, för x < 0      y2
+                ---
+
+
+Nummerisk lösning:
+
+# 0.03998000000003965 för h = 1/100 000
+# 0.039998999998930085 för h = 1/1 000 000
+# 0.039999900001149946 för h = 1/10 000 000
+# 0.03999997997894611 för h = 1/100 000 000
+
+Sålänge vi håller oss under y = 0 kommer grafen bete sig som y2, men så fort vi rent nummeriskt tar ett steg över
+x-axeln kommer grafen bete sig som y1. Därav kan vi med tillräckligt små steg hålla oss i längre i intervallet.
+
+
+Vi kan få lösningen att fastna i intervallet om vi låter h --> 0 så att stegen blir "pyttesmå".
+Ju mindre steg vi tar desto längre kan vi rent nummeriskt hålla oss längre och längre innanför intervallet.
